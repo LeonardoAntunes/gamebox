@@ -2,15 +2,15 @@
 
 ## 1. Visão Geral e Objetivo
 
-O **Gamebox** é uma aplicação web didática que visa criar um espaço onde você pode compartilhar a sua experiencia em suas jogatinas
+O **Gamebox** é uma aplicação web didática que visa criar um espaço onde você pode compartilhar a sua experiencia de suas jogatinas e deseja ao decorrer dos jogos mostrar as suas conquistas e fazer reviwes sobre os jogos qual completou.
 
-**O grande diferencial (Regra de Negócio Principal):** Ao contrário dos bancos tradicionais modernos, o Roubank cobra **taxas abusivas** para absolutamente qualquer operação que o cliente realize. O objetivo do sistema é registrar as movimentações financeiras do usuário sempre subtraindo uma porcentagem ou valor fixo sob o pretexto de "taxas de manutenção" ou "impostos do banco".
+**O grande diferencial ():**
 
 ## 2. Atores do Sistema
 
 - **Visitante:** Usuário não autenticado que acessa a página inicial e deseja abrir uma conta.
-- **Cliente:** Usuário autenticado que possui saldo (ou dívidas) no banco e realiza operações financeiras.
-- **O Banco (Sistema):** Ator invisível que aplica as regras de negócio e desconta as taxas automaticamente a cada transação do Cliente.
+- **Reviwer:** Usuário autenticado que consegue realizar postagens, sendo as mesmas reviews, comentarios em outras postagens, compartilhar conquistas e os status atual de sua jogatina(se está jogando atualmente, deu uma pausa ou completou).
+- **O Administrador(Sistema):** Ator invisível que monitora os comportamentos da comunidade, agindo quano necessario para ajudar sobre duvidas ou realizar punimentos aos que ferem as diretrizes da comunidade.
 
 ## 3. Histórias de Usuário e Escopo
 
