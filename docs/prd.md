@@ -16,19 +16,19 @@ O **Gamebox** é uma aplicação web didática que visa criar um espaço onde vo
 
 Abaixo estão as funcionalidades principais do MVP (Minimum Viable Product), escritas sob a perspectiva do usuário final.
 
-### 👤 Épico 1: Autenticação e Conta
+### 👤 Épico 1: Criação de conta e login
 
-- **US01 - Abertura de Conta:** Como um Visitante, quero preencher um formulário com meus dados pessoais (Nome, CPF, Senha) para criar uma nova conta no Roubank.
-  - _Critérios de Aceitação:_ O CPF deve ser validado; todos os campos são obrigatórios; a conta deve iniciar com saldo R$ 0,00.
-- **US02 - Acesso ao Sistema (Login):** Como um Cliente, quero inserir meu CPF e Senha para acessar meu painel financeiro.
+- **US01 - Abertura de Conta:** Como um Visitante, para criar a conta será necessario a criação de um nome de usuario, um email valido e a criação de uma senha.
+  - _Critérios de Aceitação:_ O nome de usuario deve ser unico; todos os campos são obrigatórios; o email deve ser válidp.
+- **US02 - Acesso ao Sistema (Login):** Como um Reviwer, para acessar é necessário usar o email ou o nome de usario e utilazar a sua senha.
+- **US03 - Personalização de Perfil:** Após realizar o login e ao entrar na aplicação, ha a possibilidade de entrar no seu perfil e personalizalo da maneira que deseja, podendo mudar a foto de perfil e colocar detalhes sobre vocẽ, como suas redes socias.**(ideia pode ser alterada/removida no futuro)**
 
-### 💰 Épico 2: Movimentações Financeiras
+### 🎮 Épico 2: Opções dentro da aplicação
 
-- **US03 - Visualização de Saldo:** Como um Cliente logado, quero ver meu saldo total atualizado em destaque no painel principal, para saber quanto dinheiro (ainda) tenho.
-- **US04 - Realizar Depósito:** Como um Cliente, quero informar um valor para depositar na minha conta.
-  - _Critérios de Aceitação:_ O valor deve ser positivo; o sistema deve cobrar uma **"Taxa de Depósito" (ex: 2% do valor)** e creditar apenas o valor líquido na conta do cliente.
-- **US05 - Realizar Saque:** Como um Cliente, quero informar um valor para sacar da minha conta.
-  - _Critérios de Aceitação:_ O cliente não pode sacar mais do que o saldo disponível + limite; o sistema deve cobrar uma **"Taxa de Saque" (ex: R$ 5,00 fixos por saque)**, descontando o valor do saque + a taxa do saldo total.
+- **US04 - Compartilhar os jogos que estão jogando e seu status:** Como um Reviwer logado, ele pode deixar registrado os jogos que está jogando e os status no mesmo, podendo definir se está jogando, deu uma pausa ou já o completou.
+- **US04 - Realizar e publicar Review:** Como um Reviewer, você pode produzir reviews dos jogos que jogou e comentar seus pontos fortes e fracos, o que julgou como um diferencia e se recomenda ele ou não.
+- **US05 - Comentar em postagens:** Como um Reviewer, vocẽ tem a opção de realizar comentarios em postagens, podendo discutir sobre o tema que achou debativel em alguma postagem.
+  - _Critérios de Aceitação:_ Para realizar essas acções é necessario que o usuario esteja logado; 
 
 ### 📊 Épico 3: Histórico e Transparência
 
