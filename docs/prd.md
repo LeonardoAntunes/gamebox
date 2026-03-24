@@ -9,7 +9,7 @@ O **Gamebox** é uma aplicação web didática que visa criar um espaço onde vo
 ## 2. Atores do Sistema
 
 - **Visitante:** Usuário não autenticado que acessa a página inicial e deseja abrir uma conta.
-- **Reviwer:** Usuário autenticado que consegue realizar postagens, sendo as mesmas reviews, comentarios em outras postagens, compartilhar conquistas e os status atual de sua jogatina(se está jogando atualmente, deu uma pausa ou completou).
+- **Jogador:** Usuário autenticado que consegue realizar postagens, sendo as mesmas reviews, comentarios em outras postagens, compartilhar conquistas e os status atual de sua jogatina(se está jogando atualmente, deu uma pausa ou completou).
 - **O Administrador(Sistema):** Ator invisível que monitora os comportamentos da comunidade, agindo quano necessario para ajudar sobre duvidas ou realizar punimentos aos que ferem as diretrizes da comunidade.
 
 ## 3. Histórias de Usuário e Escopo
@@ -20,17 +20,26 @@ Abaixo estão as funcionalidades principais do MVP (Minimum Viable Product), esc
 
 - **US01 - Abertura de Conta:** Como um Visitante, para criar a conta será necessario a criação de um nome de usuario, um email valido e a criação de uma senha.
   - _Critérios de Aceitação:_ O nome de usuario deve ser unico; todos os campos são obrigatórios; o email deve ser válido.
-- **US02 - Acesso ao Sistema (Login):** Como um Reviwer, para acessar é necessário usar o email ou o nome de usario e utilazar a sua senha.
+- **US02 - Acesso ao Sistema (Login):** Como um Jogador, para acessar é necessário usar o email ou o nome de usario e utilazar a sua senha.
 - **US03 - Personalização de Perfil:** Após realizar o login e ao entrar na aplicação, ha a possibilidade de entrar no seu perfil e personalizalo da maneira que deseja, podendo mudar a foto de perfil e colocar detalhes sobre vocẽ, como suas redes socias.**(ideia pode ser alterada/removida no futuro)**
 
 ### 🎮 Épico 2: Opções dentro da aplicação
 
-- **US04 - Compartilhar os jogos que estão jogando e seu status:** Como um Reviwer logado, ele pode deixar registrado os jogos que está jogando e os status no mesmo, podendo definir se está jogando, deu uma pausa ou já o completou.
-- **US04 - Realizar e publicar Review:** Como um Reviewer, você pode produzir reviews dos jogos que jogou e comentar seus pontos fortes e fracos, o que julgou como um diferencia e se recomenda ele ou não.
-- **US05 - Comentar em postagens:** Como um Reviewer, vocẽ tem a opção de realizar comentarios em postagens, podendo discutir sobre o tema que achou debativel em alguma postagem.
-  - _Critérios de Aceitação:_ Para realizar essas acções é necessario que o usuario esteja logado; 
+- **US04 - Registro de jogos:** Como usuário, quero registrar os jogos que estou jogando para acompanhar meu progresso.
+Como usuário, quero marcar um jogo como “finalizado” para indicar que completei a experiência.
+Criação de reviews
+- **US04 - Criação de reviews:** Como usuário, quero escrever uma review ao terminar um jogo para compartilhar minha opinião.
+Como usuário, quero avaliar os pontos positivos e negativos de um jogo para ajudar outros jogadores.
+Como usuário, quero dar uma nota ao jogo para resumir minha avaliação.
+- **US05 - Interação social:** Como usuário, quero comentar nas reviews de outros usuários para discutir opiniões.
+Como usuário, quero responder comentários para manter conversas.
+Como usuário, quero visualizar reviews de outros jogadores para descobrir novos jogos.
+- **US06 - Gerenciamneto de postagens:** Como usuário, quero editar minhas reviews para corrigir ou atualizar opiniões.
+Como usuário, quero excluir minhas publicações caso deseje removê-las.
+- **US07 - Filtro de busca:** Como usuário, quero pdoder pesquisar jogos baseados nas notas das avaliações.
+- **US08 - Sistema de amizades:** Como usuário, quero poder adicionar amigos e seguir perfis que me interessem.
+- 
+### 📋 Épico 3:Admnistração
 
-### 📊 Épico 3: Histórico e Transparência
-
-- **US06 - Visualizar Extrato:** Como um Cliente, quero visualizar uma lista (tabela ou cards) com o histórico de todas as minhas transações (depósitos e saques).
-  - _Critérios de Aceitação:_ A lista deve mostrar a data, o tipo de transação, o valor bruto e **o valor da taxa cobrada** pelo Roubank, deixando claro o quanto o cliente perdeu na operação.
+- **US09 - Gerenciamento e exclusão de qualquer postagen:** Como administrador, quero moderar reviews e comentários para manter o ambiente saudável.
+Como administrador, quero remover conteúdos inadequados para garantir boas práticas na comunidade.
