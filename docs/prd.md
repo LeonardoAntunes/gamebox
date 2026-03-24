@@ -28,18 +28,11 @@ Abaixo estão as funcionalidades principais do MVP (Minimum Viable Product), esc
 - **US04 - Registro de jogos:** Como usuário, quero registrar os jogos que estou jogando para acompanhar meu progresso.
 Como usuário, quero marcar um jogo como “finalizado” para indicar que completei a experiência.
 Criação de reviews
-- **US04 - Criação de reviews:** Como usuário, quero escrever uma review ao terminar um jogo para compartilhar minha opinião.
+- **US05 - Criação de reviews:** Como usuário, quero escrever uma review ao terminar um jogo para compartilhar minha opinião.
 Como usuário, quero avaliar os pontos positivos e negativos de um jogo para ajudar outros jogadores.
 Como usuário, quero dar uma nota ao jogo para resumir minha avaliação.
-- **US05 - Interação social:** Como usuário, quero comentar nas reviews de outros usuários para discutir opiniões.
-Como usuário, quero responder comentários para manter conversas.
-Como usuário, quero visualizar reviews de outros jogadores para descobrir novos jogos.
-- **US06 - Gerenciamneto de postagens:** Como usuário, quero editar minhas reviews para corrigir ou atualizar opiniões.
-Como usuário, quero excluir minhas publicações caso deseje removê-las.
-- **US07 - Filtro de busca:** Como usuário, quero pdoder pesquisar jogos baseados nas notas das avaliações.
-- **US08 - Sistema de amizades:** Como usuário, quero poder adicionar amigos e seguir perfis que me interessem.
-- 
+
 ### 📋 Épico 3: Admnistração
 
-- **US09 - Gerenciamento e exclusão de qualquer postagen:** Como administrador, quero moderar reviews e comentários para manter o ambiente saudável.
+- **US06 - Gerenciamento e exclusão de qualquer postagen:** Como administrador, quero moderar reviews 
 Como administrador, quero remover conteúdos inadequados para garantir boas práticas na comunidade.
