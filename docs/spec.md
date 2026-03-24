@@ -8,122 +8,61 @@ Abaixo está o Diagrama Entidade-Relacionamento (DER) que representa a estrutura
 
 ```mermaid
 erDiagram
-    USUARIO ||--o{ JOGO : registra
-    USUARIO ||--o{ REVIEW : escreve
-    USUARIO ||--o{ COMENTARIO : faz
-    USUARIO ||--o{ AMIZADE : cria
-    REVIEW ||--o{ COMENTARIO : contem
-    JOGO ||--o{ REVIEW : recebe
-    USUARIO ||--o{ PERFIL : possui
-    USUARIO ||--o{ FOTO_PERFIL : tem
-    USUARIO ||--o{ REDE_SOCIAL : conecta
-    JOGO ||--o{ GENERO : pertence
-    REVIEW ||--o{ NOTA : tem
-    COMENTARIO ||--o{ RESPOSTA : gera
+    USER ||--o{ GAME : registers
+    USER ||--o{ REVIEW : writes
+    USER ||--o{ PROFILE : has
+    GAME ||--o{ REVIEW : "receives"
+    ADMIN ||--o{ REVIEW : moderates
+    ADMIN ||--o{ USER : manages
 
-    USUARIO {
-        int usuarioId PK
-        string nomeUsuario UK
-        string email UK
-        string senha
-        datetime dataCriacao
-        datetime dataUltimaAtualizacao
-        boolean ativo
-        string tipoUsuario "admin ou jogador"
+    USER {
+        int userId PK
+        string username UK "unique"
+        string email UK "unique, valid"
+        string passwordHash
+        datetime createdAt
+        string role "player, admin"
     }
 
-    PERFIL {
-        int perfilId PK
-        int usuarioId FK
-        string biografia
-        string localizacao
-        datetime dataAtualizacao
+    PROFILE {
+        int profileId PK
+        int userId FK
+        string profilePhoto
+        string bio
+        string socialMediaLinks
+        datetime updatedAt
     }
 
-    FOTO_PERFIL {
-        int fotoId PK
-        int usuarioId FK
-        string caminhoFoto
-        datetime dataUpload
-    }
-
-    REDE_SOCIAL {
-        int redeSocialId PK
-        int usuarioId FK
-        string plataforma
-        string url
-        datetime dataConexao
-    }
-
-    JOGO {
-        int jogoId PK
-        string titulo UK
-        string descricao
-        string desenvolvedora
-        datetime dataLancamento
-        string plataforma
-    }
-
-    GENERO {
-        int generoId PK
-        string nomeGenero UK
-    }
-
-    USUARIO_JOGO {
-        int usuarioJogoId PK
-        int usuarioId FK
-        int jogoId FK
-        string status "em progresso, finalizado, parado"
-        float progressoPercentual
-        datetime dataInicio
-        datetime dataFinalizacao
+    GAME {
+        int gameId PK
+        string title
+        string description
+        string genre
+        datetime releaseDate
     }
 
     REVIEW {
         int reviewId PK
-        int usuarioId FK
-        int jogoId FK
-        string titulo
-        string conteudo
-        float nota "1 a 5"
-        int pontosPozitivos
-        int pontosNegativos
-        datetime dataCriacao
-        datetime dataUltimaEdicao
-        boolean deletada
+        int userId FK
+        int gameId FK
+        string content
+        decimal rating "1-10"
+        string status "published, flagged, removed"
+        datetime createdAt
+        datetime updatedAt
     }
 
-    NOTA {
-        int notaId PK
-        int reviewId FK
-        float valor
+    USER_GAME_STATUS {
+        int statusId PK
+        int userId FK
+        int gameId FK
+        string status "playing, completed, abandoned"
+        datetime startDate
+        datetime completionDate
     }
 
-    COMENTARIO {
-        int comentarioId PK
-        int usuarioId FK
-        int reviewId FK
-        string conteudo
-        datetime dataCriacao
-        datetime dataUltimaEdicao
-        boolean deletado
-    }
-
-    RESPOSTA {
-        int respostaId PK
-        int comentarioId FK
-        int usuarioId FK
-        string conteudo
-        datetime dataCriacao
-        datetime dataUltimaEdicao
-        boolean deletada
-    }
-
-    AMIZADE {
-        int amizadeId PK
-        int usuarioId1 FK
-        int usuarioId2 FK
-        string status "pendente, aceita, recusada"
-        datetime dataSolicitacao
-        datetime dataAceitacao
-    }
+    ADMIN {
+        int adminId PK
+        int userId FK
+        string permissions
+        datetime assignedAt
