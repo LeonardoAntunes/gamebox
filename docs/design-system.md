@@ -10,17 +10,27 @@ Neste projeto, utilizamos um framework UI e aplicamos customizações pontuais p
 
 As variáveis de cor do framework foram escolhidas para induzir o usuário ao erro ou alertá-lo (tarde demais) sobre as taxas:
 
-- **Cor Primária:** `#B026FF` - CTAs, estados ativos, barras de progresso brilhantes
+### Cores de Fundo e Superfície
 
-- **Fundo:** `#09090E` - Fundo do aplicativo, vácuo profundo
+- **Deep Obsidian (Fundo Principal):** #0c0f10 (Usado para o background geral de todas as telas).
 
-- **Superfície:** `#151520` - Cartões, modais (bottom sheets), campos de entrada
+- **Surface Container (Cartões e Modais):** #1a1d1e (Usado para blocos bento, cards de jogos e superfícies de destaque).
 
-- **Texto:** `#F8F8F8` - Texto principal de leitura
+- **Surface High (Hover e Destaque sutil):** #232e31 (Usado para estados de interação e separação de conteúdo).
 
-- **Suave:** `#828291` - Marcações de tempo, rótulos secundários, bordas
+### Cores de Texto e Acento
 
-- **Destaque:** `#00FF66` - Marcas de seleção de conclusão, altas pontuações de análise, notificações de sucesso!").
+- **Primary Ice (Acento):** #aecbda (Usado para botões primários, ícones ativos, barras de progresso e links de navegação selecionados).
+
+- **High Emphasis (Texto Primário)**: #f8f9fa (Off-white) (Usado para títulos e corpo de texto principal).
+
+- **Medium Emphasis (Texto Secundário)**: #dee7eb com 60% de opacidade. (Usado para legendas, metadados e informações de apoio).
+
+### Cores de Feedback
+
+- **Positive (Prós):** #1B4D3E (Verde escuro)
+
+- **Negative (Contras):** #7A1B1B (Carmesim profundo)
 
 ### 3. Tipografia
 
