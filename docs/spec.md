@@ -67,3 +67,10 @@ erDiagram
         string permissions
         datetime assignedAt
     }
+```
+
+## 2. Especificação Técnica
+Aqui estaraão registradas as versões usadas das tecnologias escolhidas.
+Framework CSS: Materealize WEB v2.2.2
+Java Scrpit:
+
